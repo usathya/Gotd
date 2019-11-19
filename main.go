@@ -20,6 +20,7 @@ func homePage(w http.ResponseWriter, r *http.Request) {
 
 func handleRequests() {
 	http.HandleFunc("/", homePage)
+	fmt.Println("QOTD listening on port 10000")
 	log.Fatal(http.ListenAndServe(":10000", nil))
 }
 
