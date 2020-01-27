@@ -14,7 +14,7 @@ func homePage(w http.ResponseWriter, r *http.Request) {
 	quotes[2] = "Life is really simple, but we insist on making it complicated. -- Confucius"
 	quotes[3] = "This above all, to thine own self be true. -- William Shakespeare"
 	quotes[4] = "Live your dreams. -– Les Brown"
-	quotes[5] = "Doo be doo be dooo. -- Frank Sinatra"
+	quotes[5] = "Doo be doo be dooo. -- Frank Sinatra Test"
 
 	fmt.Fprintf(w, quotes[rand.Intn(6)])
 }
